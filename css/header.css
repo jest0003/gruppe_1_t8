@@ -17,11 +17,12 @@ a {text-decoration: none;}
 }
 .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 200px;
+    right: -100%;
+    top: 205px;
     background-color: white;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 60px;
 }
@@ -30,11 +31,11 @@ a {text-decoration: none;}
     right: 0;
 }
 
-.hambuger {
+.hamburger {
     display: block;
     cursor: pointer;
     background-color: #6D8273;
-    padding: 60px;
+    padding: 20px;
     border-radius: 50%;
 }
 
@@ -48,12 +49,12 @@ a {text-decoration: none;}
     background-color: white;
 }
 
-.hambuger.active .bar:nth-child(2) {
+.hamburger.active .bar:nth-child(2) {
 opacity: 0;
 }
-.hambuger.active .bar:nth-child(1) {
+.hamburger.active .bar:nth-child(1) {
 transform: translateY(8px) rotate(45deg);
 }
-.hambuger.active .bar:nth-child(3) {
+.hamburger.active .bar:nth-child(3) {
 transform: translateY(-8px) rotate(-45deg);
 }
