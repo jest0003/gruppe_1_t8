@@ -90,7 +90,7 @@
 #category-cards {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 50px;
   position: relative;
   background-color: #faf5f2c0;
   border-radius: 20px;
@@ -108,7 +108,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
@@ -182,7 +182,7 @@
 .article-card {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px 50px;
   position: relative;
   background-color: #faf5f2c0;
   border-radius: 20px;
@@ -199,7 +199,7 @@
 /* Grid container for articles */
 .articles-grid {
   display: flex;
-  gap: 35px;
+  gap: 50px;
   justify-content: left;
 }
 
