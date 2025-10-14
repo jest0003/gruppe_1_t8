@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a {text-decoration: none;}
+.flex-r {
+    display: flex;
+    gap: 20px;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #F8F4F1;
+}
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 128px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #6D8273;
+    border-style: solid;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.nav-item {margin: 16px 0;
+padding-right: 20px;
+padding-left: 20px;}
+.nav-link {color: black;
+font-family: mont-medium;
+font-size: 20px;}
+.nav-menu.active{
+    right: 0;
+}
+.nav-menu .nav-item:first-child {
+  background-color: #6D8273;
+  display: block;
+  width: 100%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  margin-top: 0;
+}
+.nav-menu .nav-item:first-child .nav-link {
+    color: white;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    border: #6D8273;
+}
+.nav-menu .nav-item:nth-child(2) {
+    margin-top: 0px;
+}
+.nav-menu .nav-item:nth-child(4) {
+    margin-bottom: 20px;
+}
+.logon {
+    background-color: #B3CAA3;
+}
+.kurv {
+    background-color: #9ABEA5;
+}
+.kurv img, .logon img {
+width: 30px;
+height: 30px;
+object-fit: contain;
+}
+.kurv, .logon { cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;}
+
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #6D8273;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
