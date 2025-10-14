@@ -1,0 +1,16 @@
+.desription_card {display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #faf5f2;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+.review_card {
+    display: inline-block;
+    background-color: #E4EBD4;
+    border-radius: 30px;
+    padding: 25px;
+}
