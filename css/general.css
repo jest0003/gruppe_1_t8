@@ -27,14 +27,9 @@ p {
 a {
   font-family: mont-reg;
 }
-h2 {font-family: mont-reg;
-font-size: 32px;}
-p {font-family: mont-reg;
-font-size:20px;}
-
 html,
 body {
- margin: 0;
+  margin: 0;
   padding: 0;
   width: 100%;
   max-width: 1000px;
