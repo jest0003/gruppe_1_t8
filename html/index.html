@@ -6,6 +6,7 @@
     <title>Blooming beauty</title>
     <link rel="stylesheet" href="header.html" />
     <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,7 +25,7 @@
       href="../favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="../favicon_io/site.webmanifest" />
-    <script src="../js/" defer></script>
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -40,26 +41,30 @@
       <a href="">See what we have to offer</a>
     </header>
     <main>
-      <section>
+      <section id="category-cards">
         <h1>Go to categories</h1>
-        <div id="category-card">
-          <img src="" alt="" />
-          <h2></h2>
-          <p></p>
-          <a href="">See products</a>
+        <div class="category-container">
+          <!-- Kategorierne indsættes her via JavaScript -->
         </div>
+        <!-- Dekorativt blad bag det højre kort -->
+        <img
+          src="/img/Leaf2.png"
+          alt="Decorative leaf"
+          class="decorative-leaf"
+        />
       </section>
+
       <section>
         <h1>Explore our universe</h1>
         <div class="article-card">
-          <img src="/img/oilimg.webp" alt="Castor oil in glass pipette" />
+          <img src="/img/oilyimg.webp" alt="Castor oil in glass pipette" />
           <h1>Tips & Tricks</h1>
           <p>Why castor oil is so popular in beauty</p>
           <a href="">Read more</a>
         </div>
         <div class="article-card">
           <img
-            src="/img/skincareimg.webp"
+            src="/img/skincaregirl.webp"
             alt="Woman applying skincare while looking in the mirror and smiling at herself"
           />
           <h1>Get to know your skintype</h1>

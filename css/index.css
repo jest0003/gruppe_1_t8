@@ -1,0 +1,94 @@
+.img-card {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#category-cards {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  background-color: #faf5f2c0;
+  border-radius: 20px;
+}
+
+#category-cards h1 {
+  font-family: prata;
+  text-align: left;
+  color: #5a5a5a;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.category-card {
+  background-color: #d9ebe0;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px;
+  height: 400px;
+  text-align: left;
+  gap: 20px;
+  box-shadow: 0 4px 8px hsl(137, 9%, 47%);
+}
+
+/* Styling for billedet i kategorikortet */
+.category-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+  display: block;
+  background-color: white;
+  border: solid 1px black;
+}
+
+/* Styling for kategorinavnet */
+.category-card h2 {
+  font-family: prata;
+  color: #272924;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styling for beskrivelsen */
+.category-card p {
+  font-size: 0.9em;
+  color: #272924;
+  margin-bottom: 20px;
+}
+
+/* Styling for "See Products"-knappen */
+.category-card a {
+  display: inline-block;
+  background-color: #6d8273;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: solid 0.3px black;
+  transition: background-color 0.3s;
+}
+
+.category-card a:hover {
+  background-color: #8a938e;
+}
+
+/* Dekorativt blad bag det højre kort */
+.decorative-leaf {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  width: 150px;
+  height: auto;
+  z-index: -1;
+  opacity: 0.8;
+}
