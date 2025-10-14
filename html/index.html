@@ -6,6 +6,7 @@
     <title>Blooming beauty</title>
     <link rel="stylesheet" href="header.html" />
     <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,49 +25,66 @@
       href="../favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="../favicon_io/site.webmanifest" />
-    <script src="../js/" defer></script>
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <h2>For anyone looking to</h2>
-      <h1>Bloom in Beauty</h1>
-      <p>
-        Welcome to our ethical and recycleable beauty universe! Learn more about
-        your new favorite products and purchase them too, without feeling bad.
-        Read costumer reviews and join our membership for costumized deals to
-        your needs.
-      </p>
-      <img src="/img/indeximg.webp" alt="Closeup of daycream" />
-      <a href="">See what we have to offer</a>
-    </header>
+    <header></header>
     <main>
-      <section>
-        <h1>Go to categories</h1>
-        <div id="category-card">
-          <img src="" alt="" />
-          <h2></h2>
-          <p></p>
-          <a href="">See products</a>
-        </div>
-      </section>
-      <section>
-        <h1>Explore our universe</h1>
-        <div class="article-card">
-          <img src="/img/oilimg.webp" alt="Castor oil in glass pipette" />
-          <h1>Tips & Tricks</h1>
-          <p>Why castor oil is so popular in beauty</p>
-          <a href="">Read more</a>
-        </div>
-        <div class="article-card">
-          <img
-            src="/img/skincareimg.webp"
-            alt="Woman applying skincare while looking in the mirror and smiling at herself"
-          />
-          <h1>Get to know your skintype</h1>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>For anyone looking to</h2>
+          <h1>Bloom in Beauty</h1>
+          <p>Welcome to our ethical and recyclable beauty universe!</p>
           <p>
-            Take our test and find out what products suits your skin the best
+            more about your new favorite products and purchase them too, without
+            feeling bad. Read customer reviews and join our membership for
+            customized deals to your needs.
           </p>
-          <a href="">Take quiz</a>
+          <a href="/produktliste.html" class="cta-button">See what we offer</a>
+        </div>
+        <img
+          src="/img/indeximg.webp"
+          alt="Closeup of daycream"
+          class="hero-image"
+        />
+      </section>
+
+      <section id="category-cards">
+        <h1>Go to categories</h1>
+        <div class="category-container">
+          <!-- Kategorierne indsættes her via JavaScript -->
+        </div>
+        <!-- Dekorativt blad bag det højre kort -->
+        <img
+          src="/img/Leaf.webp"
+          alt="Decorative leaf"
+          class="decorative-leaf"
+        />
+      </section>
+
+      <section class="article-card">
+        <h1>Explore our universe</h1>
+        <div class="articles-grid">
+          <article class="article-container">
+            <img src="/img/oilyimg.webp" alt="Castor oil in glass pipette" />
+            <div class="article-content">
+              <h2>Tips & Tricks</h2>
+              <p>Why castor oil is so popular in beauty</p>
+            </div>
+            <a href="article.html" class="read-more-button">Read more</a>
+          </article>
+          <article class="article-container">
+            <img src="/img/skincaregirl.webp" alt="Woman applying skincare" />
+            <div class="article-content">
+              <h2>Get to know your skintype</h2>
+              <p>
+                Take our test and find out what products suits your skin the
+                best
+              </p>
+            </div>
+            <a href="#" class="take-quiz-button">Take quiz</a>
+          </article>
+          <img src="/img/Leaf.webp" alt="Decorative leaf" class="decor-leaf" />
         </div>
       </section>
     </main>
