@@ -1,60 +1,40 @@
-const categoryContainer = document.querySelector(".category-container");
+const categoryList = document.querySelector(".category-container");
 
-// De tre kategorier, du vil vise
 const desiredCategories = [
-  { name: "Beauty", url: "https://dummyjson.com/products/category/beauty" },
-  {
-    name: "Fragrances",
-    url: "https://dummyjson.com/products/category/fragrances",
-  },
-  {
-    name: "Skin Care",
-    url: "https://dummyjson.com/products/category/skin-care",
-  },
+  { name: "Makeup", category: "beauty" },
+  { name: "Skin Care", category: "skin-care" },
+  { name: "Fragrances", category: "fragrances" },
 ];
 
-// Hent et produkt fra hver kategori for at få et billede
-async function fetchCategoryImages() {
-  const categoriesWithImages = [];
-
-  for (const category of desiredCategories) {
-    const response = await fetch(`${category.url}?limit=1`);
-    const data = await response.json();
-    if (data.products && data.products.length > 0) {
-      const firstProduct = data.products[0];
-      categoriesWithImages.push({
-        name: category.name,
-        url: category.url,
-        image: firstProduct.images[0], // Brug det første billede fra produktet
-      });
-    }
-  }
-
-  showCategories(categoriesWithImages);
-}
-
-// Vis kategorierne med billeder
 function showCategories(categories) {
-  categoryContainer.innerHTML = "";
-  let html = "";
+  categories.forEach((category, index) => {
+    fetch(
+      `https://dummyjson.com/products/category/${category.category}?limit=1`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.products && data.products.length > 0) {
+          let imageUrl = data.products[0].images[0];
 
-  for (const category of categories) {
-    html += `
-      <div class="category-card">
-        <img
-          src="${category.image}"
-          alt="${category.name}"
-          class="img-card"
-        />
-        <h2 class="category">${category.name}</h2>
-        <p class="info">Explore products</p>
-        <a href="${category.url}" class="see-products">See products</a>
-      </div>
-    `;
-  }
+          const categoryCard = document.createElement("div");
+          categoryCard.className = "category-card";
+          categoryCard.innerHTML = `
+            <img src="${imageUrl}" alt="${category.name}" class="category-image" />
+            <h2>${category.name}</h2>
+            <p>Explore products</p>
+            <a href="productlist.html?category=${category.category}" class="see-products-button">See Products</a>
+          `;
 
-  categoryContainer.innerHTML = html;
+          // sætter vores cards i den rigtige rækkefølge //
+          if (index === 0) {
+            categoryList.innerHTML = "";
+            categoryList.appendChild(categoryCard);
+          } else {
+            categoryList.appendChild(categoryCard);
+          }
+        }
+      });
+  });
 }
 
-// Kald funktionen for at hente billeder og vise kategorier
-fetchCategoryImages();
+showCategories(desiredCategories);
