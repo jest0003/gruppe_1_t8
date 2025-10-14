@@ -3,10 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-image: linear-gradient(to bottom, #f8f4f1, #e5d6bc);
-}
 li {
   list-style: none;
 }
