@@ -24,6 +24,14 @@ h3{
      font-family: mont-medium;
 }
 
+p{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 24px;
+}
+
 .flex{
     display: flex;
     flex-direction: row;
@@ -84,6 +92,9 @@ h3{
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
+.product_item h3, p{
+    margin-bottom: 6px;
+}
 
 .product_item img{
     width: 300px;
@@ -97,13 +108,50 @@ h3{
   border-radius: 5px;
   flex: 1 1 200px;
   max-width: 300px;
+
+}
+
+.price{
+ font-size: 20px;
+ font-family: mont-medium;
 }
 
 .sale p:last-child{
- color: red;
+ color: white;
+ padding: 6px;
+ background-color: #C31F1F;
+ border: solid 0.3px black;
 }
 .sale{
  display: flex;
  justify-content: space-between;
 }
 
+.sale p:first-child{
+     font-size: 20px;
+ font-family: mont-medium;
+ font-style: italic;
+}
+
+.produktbtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produktbtn a{
+    background-color: #6D8273;
+    color: white;
+    border: solid 0.3px #272924;
+    padding: 20px;
+    border-radius: 28px;
+    margin-top: 10px;
+}
+
+.produktbtn a:nth-child(2){
+    background-color: #ffffff;
+    color: #272924;
+    border: solid 0.3px #272924;
+    padding: 20px;
+    border-radius: 28px;
+    margin-top: 10px;
+}
