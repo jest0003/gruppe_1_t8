@@ -19,3 +19,21 @@ h2 {font-family: mont-reg;
 font-size: 32px;}
 p {font-family: mont-reg;
 font-size:20px;}
+
+html,
+body {
+ margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+html {
+  display: table;
+  margin: auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
