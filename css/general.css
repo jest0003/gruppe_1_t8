@@ -27,18 +27,11 @@ p {
 a {
   font-family: mont-reg;
 }
-/* html,
+
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 1000px;
-  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #f8f4f1, #e5d6bc);
 }
-html {
-  display: table;
-  margin: auto;
-} */
+
 body {
   display: flex;
   flex-direction: column;
