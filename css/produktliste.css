@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+@font-face {
+    font-family: mont-medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+
+h1, h2{
+    margin-left: 35px;
+}
+
+ol, li, a, button{
+    font-family: mont-reg;
+}
+
+h3{
+     font-family: mont-medium;
+}
+
+p{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs{
+    margin: 18px;
+    margin-left: 38px;
+    display: flex;
+}
+
+#filters, #sorting{
+    margin-left: 35px;
+}
+
+.filterbtn{
+ background-color: #F4FFEC;
+ padding: 15px;
+ border: 2px solid #B3CAA3;
+ cursor: pointer;
+ font-size: 16px;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ margin-right: 30px;
+ width: 200px; 
+ height: 200px;
+ border-radius: 50%;
+ filter: drop-shadow(0 0 0.25rem #B3CAA3);
+}
+
+.filterbtn img{
+ width: 170px; 
+ height: 170px;
+}
+
+
+.filterbtn:hover{
+     background-color: #d0e8be;
+ transition: 50ms;
+}
+
+.filtername h3{
+    margin-left: 110px;
+}
+.filtername h3:nth-child(2){
+    margin-left: 130px;
+}
+
+.category_list_container, .product_item{
+    margin: 18px;
+    margin-bottom: 50px;
+ 
+}
+
+.category_list_container{
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.product_item h3, p{
+    margin-bottom: 6px;
+}
+
+.product_item img{
+    width: 300px;
+   
+}
+
+.product_item {
+ background-color: #D9EBE0;
+ padding: 25px;
+  filter: drop-shadow(0 0 0.25rem #6D8273);
+  border-radius: 5px;
+  flex: 1 1 200px;
+  max-width: 300px;
+
+}
+
+.price{
+ font-size: 20px;
+ font-family: mont-medium;
+}
+
+.sale p:last-child{
+ color: white;
+ padding: 6px;
+ background-color: #C31F1F;
+ border: solid 0.3px black;
+}
+.sale{
+ display: flex;
+ justify-content: space-between;
+}
+
+.sale p:first-child{
+     font-size: 20px;
+ font-family: mont-medium;
+ font-style: italic;
+}
+
+.produktbtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produktbtn a{
+    background-color: #6D8273;
+    color: white;
+    border: solid 0.3px #272924;
+    padding: 20px;
+    border-radius: 28px;
+    margin-top: 10px;
+}
+
+.produktbtn a:nth-child(2){
+    background-color: #ffffff;
+    color: #272924;
+    border: solid 0.3px #272924;
+    padding: 20px;
+    border-radius: 28px;
+    margin-top: 10px;
+}

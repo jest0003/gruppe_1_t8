@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming beauty</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/produktliste.css">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+<link rel="manifest" href="../favicon_io/site.webmanifest">
+<script src="../js/" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+<h1>Products</h1>
+<ol class="breadcrumbs">
+    <li><a href="index.html">Categories</a></li>
+    <li style="margin-left: 5px;">></li>
+    <li><a href="produktliste.html">Products</a></li>
+    <li style="margin-left: 5px;">></li>
+    <li>${product.brandname} ${product.variantname}</li>
+</ol>
+<section id="filters" class="flex">
+    <button class="filterbtn">
+                <img src="https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp" alt="Clickable Image">
+    </button>
+    <button class="filterbtn">
+        <img src="https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp" alt="Clickable Image"></button>
+    <button class="filterbtn">
+        <img src="https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp" alt="Clickable Image">
+    </button>
+</section>
+
+<section class="filtername flex">
+ <h3>SOAP</h3>
+ <h3>MOISTURIZER</h3>
+ <h3>BODY CARE</h3>
+</section>
+
+<section id="sorting">
+    <button data-direction="lowhigh" class="sortingbtn">Price: low to high</button>
+    <button data-direction="highlow" class="sortingbtn">Price: high to low</button>
+</section>
+    <section class="category_list_container flex">
+        <div class="flex">
+            <div class="product_item">
+                <img src="https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp" alt="PUMA Backpack">
+                <h3>Attitude Super Leaves Hand Soap</h3>
+                <p class="category">A natural and nourishing hand soap enriched with the goodness of super leaves</p>
+                <p class="price">€8.99</p>
+                 <div class="produktbtn flex">
+                    <a href="produkt.html">READ MORE</a>
+                    <a href="produkt.html">ADD TO BAG</a>
+                </div>
+            </div>
+             <div class="product_item sold-out">
+                <img src="https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp" alt="PUMA Backpack">
+                <h3>Olay Ultra Moisture Shea Butter Body Wash</h3>
+                <p class="category">A luxurious body wash that hydrates and nourishes your skin with the moisturizing power of shea butter.</p>
+                <p class="price">449,-</p>
+                <div class="sale">
+                    <p>Now 899,- </p>
+                    <p>-50%</p>
+                </div>
+                <div class="produktbtn flex">
+                    <a href="produkt.html">READ MORE</a>
+                    <a href="produkt.html">ADD TO BAG</a>
+                </div>
+            </div>
+             <div class="product_item sold-out">
+                <img src="https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp" alt="SAHARA Team Round Neck Jersey">
+                <h3>Vaseline Men Body and Face Lotion</h3>
+                <p class="category">a specially formulated lotion designed to provide long-lasting moisture to men's skin</p>
+                <p class="price">199,-</p>
+                <div class="sale">
+                    <p>Now 399,- </p>
+                    <p>-50%</p>
+                </div>
+                <div class="produktbtn flex">
+                    <a href="produkt.html">READ MORE</a>
+                    <a href="produkt.html">ADD TO BAG</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    </main>
+    <footer></footer>
+</body>
+</html>
