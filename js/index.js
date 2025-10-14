@@ -47,7 +47,7 @@ function showCategories(categories) {
           class="img-card"
         />
         <h2 class="category">${category.name}</h2>
-        <p class="info">Check our selection</p>
+        <p class="info">Explore products</p>
         <a href="${category.url}" class="see-products">See products</a>
       </div>
     `;
