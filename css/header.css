@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 li {
   list-style: none;
@@ -47,10 +46,10 @@ a {
 .nav-menu.active {
   right: 0;
 }
+
 .nav-menu .nav-item:first-child {
   background-color: #6d8273;
   display: block;
-  width: 100%;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   margin-top: 0;
