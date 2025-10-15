@@ -10,34 +10,30 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="../favicon_io/site.webmanifest">
-<script src="../js/" defer></script>
+<script src="../js/produktliste.js" defer></script>
 </head>
 <body>
     <header></header>
     <main>
 <h1>Products</h1>
 <ol class="breadcrumbs">
-    <li><a href="index.html">Categories</a></li>
-    <li style="margin-left: 5px;">></li>
-    <li><a href="produktliste.html">Products</a></li>
+    <li><a href="index.html">HOME</a></li>
     <li style="margin-left: 5px;">></li>
     <li>${product.brandname} ${product.variantname}</li>
 </ol>
-<section id="filters" class="flex">
+<section id="filters" >
     <button class="filterbtn">
                 <img src="https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp" alt="Clickable Image">
+                <h3>SOAP</h3>
     </button>
     <button class="filterbtn">
-        <img src="https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp" alt="Clickable Image"></button>
+        <img src="https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp" alt="Clickable Image">
+    <h3>MOISTURIZER</h3>
+</button>
     <button class="filterbtn">
         <img src="https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp" alt="Clickable Image">
+    <h3>BODY CAREE</h3>
     </button>
-</section>
-
-<section class="filtername flex">
- <h3>SOAP</h3>
- <h3>MOISTURIZER</h3>
- <h3>BODY CARE</h3>
 </section>
 
 <section id="sorting">
@@ -70,7 +66,7 @@
                     <a href="produkt.html">ADD TO BAG</a>
                 </div>
             </div>
-             <div class="product_item sold-out">
+             <div class="product_item">
                 <img src="https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp" alt="SAHARA Team Round Neck Jersey">
                 <h3>Vaseline Men Body and Face Lotion</h3>
                 <p class="category">a specially formulated lotion designed to provide long-lasting moisture to men's skin</p>
@@ -79,7 +75,7 @@
                     <p>Now 399,- </p>
                     <p>-50%</p>
                 </div>
-                <div class="produktbtn flex">
+                <div class="produktbtn">
                     <a href="produkt.html">READ MORE</a>
                     <a href="produkt.html">ADD TO BAG</a>
                 </div>
