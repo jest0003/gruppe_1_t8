@@ -22,7 +22,7 @@ function showCategories(categories) {
             <img src="${imageUrl}" alt="${category.name}" class="category-image" />
             <h2>${category.name}</h2>
             <p>Explore products</p>
-            <a href="productlist.html?category=${category.category}" class="see-products-button">See Products</a>
+            <a href="produktliste.html?category=${category.category}" class="see-products-button">See Products</a>
           `;
 
           // sætter vores cards i den rigtige rækkefølge //
