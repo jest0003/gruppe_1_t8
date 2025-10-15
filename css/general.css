@@ -29,10 +29,6 @@ a {
 }
 
 body {
-  background-image: linear-gradient(to bottom, #f8f4f1, #e5d6bc);
-}
-
-body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
