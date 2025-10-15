@@ -33,3 +33,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+body {
+  background-image: linear-gradient(to bottom, #f8f4f1, #e5d6bc);
+}
+ 
