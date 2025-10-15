@@ -1,13 +1,13 @@
 const categoryList = document.querySelector(".category-container");
 
 const desiredCategories = [
-  { name: "Makeup", category: "beauty" },
-  { name: "Skin Care", category: "skin-care" },
-  { name: "Fragrances", category: "fragrances" },
+  { name: "Makeup", category: "beauty", productId: 3 },
+  { name: "Skin Care", category: "skin-care", productId: 118 },
+  { name: "Fragrances", category: "fragrances", productId: 10 },
 ];
 
 function showCategories(categories) {
-  categories.forEach((category, index) => {
+  categories.forEach((category) => {
     fetch(
       `https://dummyjson.com/products/category/${category.category}?limit=1`
     )
@@ -16,22 +16,14 @@ function showCategories(categories) {
         if (data.products && data.products.length > 0) {
           let imageUrl = data.products[0].images[0];
 
-          const categoryCard = document.createElement("div");
-          categoryCard.className = "category-card";
-          categoryCard.innerHTML = `
-            <img src="${imageUrl}" alt="${category.name}" class="category-image" />
-            <h2>${category.name}</h2>
-            <p>Explore products</p>
-            <a href="produktliste.html?category=${category.category}" class="see-products-button">See Products</a>
+          categoryList.innerHTML += `
+            <div class="category-card">
+              <img src="${imageUrl}" alt="${category.name}" class="category-image" />
+              <h2>${category.name}</h2>
+              <p>Explore products</p>
+              <a href="productlist.html?category=${category.category}" class="see-products-button">See Products</a>
+            </div>
           `;
-
-          // sætter vores cards i den rigtige rækkefølge //
-          if (index === 0) {
-            categoryList.innerHTML = "";
-            categoryList.appendChild(categoryCard);
-          } else {
-            categoryList.appendChild(categoryCard);
-          }
         }
       });
   });
