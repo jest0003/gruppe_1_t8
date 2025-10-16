@@ -14,3 +14,33 @@
     border-radius: 30px;
     padding: 25px;
 }
+
+.product-box { display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: rgb(150, 113, 113);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.small-img {
+    display: flex;
+    flex-direction: column;
+}
+.small-img img {
+    max-width: 140px;
+    max-height: 140px;
+    margin: 20px;
+    border: solid 1px black;
+}
+
+#big-img {
+    max-width: 400px;
+    max-height: 400px;
+    border: solid 1px black;
+    margin-top: 20px;
+}
+#right-side {
+    margin-top: 20px;
+}
