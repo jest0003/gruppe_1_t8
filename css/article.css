@@ -1,6 +1,9 @@
 .main {
   max-width: 50ch;
 }
+body {
+  background-image: linear-gradient(to bottom, #f8f4f1, #e6d8c0);
+}
 h1 {
   margin: 5rem;
 
@@ -21,12 +24,16 @@ h1 {
   border-style: solid;
   border-color: #6d8273;
   border-width: 0.3rem;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin-top: 3rem;
+  border-radius: 0.8rem;
+  padding-top: 3.5rem;
+  padding-left: 3rem;
+  padding-right: 3.5rem;
+  padding-bottom: 3.5rem;
+  margin-top: 4.3rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 7rem;
+  margin-left: 3rem;
+  margin-right: 10rem;
+  line-height: 2.4rem;
 }
 
 h3 {
@@ -43,13 +50,23 @@ li {
   font-size: 20px;
   line-height: 2.4rem;
 }
+
 .castor-2 {
   background-color: rgb(250, 245, 242, 0.7);
   border-radius: 2rem;
-  margin-left: 2rem;
-  margin-right: 5rem;
-  padding: 3rem;
+  margin-right: 9.5rem;
+  margin-left: 2.6rem;
+  margin-top: 3rem;
+  margin-bottom: 15rem;
+  padding-top: 3rem;
+  padding-right: 9rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
   line-height: 2rem;
-  max-width: 80rem;
-  margin-bottom: 2rem;
+  max-width: 84rem;
+  margin-bottom: 4rem;
+  line-height: 2.2rem;
+}
+.castor-image {
+  margin-left: 8rem;
 }
