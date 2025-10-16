@@ -1,0 +1,55 @@
+.main {
+  max-width: 50ch;
+}
+h1 {
+  margin: 5rem;
+
+  margin-bottom: 1rem;
+}
+.title-part2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.article-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+.intro-castor {
+  background-color: rgb(217, 235, 224, 0.7);
+  border-style: solid;
+  border-color: #6d8273;
+  border-width: 0.3rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 7rem;
+}
+
+h3 {
+  font-family: mont-reg;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+ul {
+  margin-right: 10rem;
+}
+li {
+  list-style-type: circle;
+  font-family: mont-reg;
+  font-size: 20px;
+  line-height: 2.4rem;
+}
+.castor-2 {
+  background-color: rgb(250, 245, 242, 0.7);
+  border-radius: 2rem;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  padding: 3rem;
+  line-height: 2rem;
+  max-width: 80rem;
+  margin-bottom: 2rem;
+}
