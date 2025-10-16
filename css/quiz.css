@@ -152,7 +152,7 @@ img {
   cursor: pointer;
   z-index: 1;
   transition: background 0.2s ease;
-::after d}
+}
 
 .quiz-question input[type="button"]:hover {
   background-color: #9fd8b0;
