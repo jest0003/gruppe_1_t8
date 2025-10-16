@@ -25,15 +25,16 @@ h1 {
   border-color: #6d8273;
   border-width: 0.3rem;
   border-radius: 0.8rem;
-  padding-top: 3.5rem;
-  padding-left: 3rem;
-  padding-right: 3.5rem;
-  padding-bottom: 3.5rem;
+  max-width: 110ch;
+  padding-top: 3.6rem;
+  padding-left: 4.2rem;
+  padding-right: 5.5rem;
+  padding-bottom: 3.3rem;
   margin-top: 4.3rem;
   margin-bottom: 2rem;
   margin-left: 3rem;
   margin-right: 10rem;
-  line-height: 2.4rem;
+  line-height: 2.7rem;
 }
 
 h3 {
@@ -56,17 +57,98 @@ li {
   border-radius: 2rem;
   margin-right: 9.5rem;
   margin-left: 2.6rem;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-bottom: 15rem;
-  padding-top: 3rem;
-  padding-right: 9rem;
-  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 3.5rem;
   padding-left: 5rem;
-  line-height: 2rem;
+  line-height: 1.6rem;
   max-width: 84rem;
   margin-bottom: 4rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
 }
 .castor-image {
   margin-left: 8rem;
+}
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+  }
+  p {
+    font-size: 1rem;
+  }
+  body {
+    padding: 0 1rem;
+  }
+  .article-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* let it expand full width */
+    max-height: none; /* stop cutting off bottom */
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    padding: 1rem;
+    overflow: visible;
+    margin-left: -3.5rem;
+  }
+  body {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .title-part2 {
+    font-size: 1rem;
+  }
+  /* .intro-castor {
+    margin: 0.5rem;
+    padding: 0rem;
+    line-height: 1.8rem;
+    font-size: 0.5rem;
+  }
+  .castor-2 {
+    font-size: 0.2rem;
+    margin: 0.5rem;
+    padding: 0rem;
+    line-height: 1.7rem;
+  } */
+  .article-title img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .intro-castor,
+  .castor-2 {
+    font-size: 0.8rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1re;
+
+    max-width: 80ch;
+  }
+  ul {
+    margin-right: 2rem;
+    margin-left: 1.1rem;
+  }
+  li {
+    font-size: 1rem;
+    line-height: 1.9rem;
+  }
+
+  .castor-image {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .intro-castor {
+    line-height: 2rem;
+  }
+  .castor-2 {
+    font-size: 0.6rem;
+    line-height: 2rem;
+  }
 }
