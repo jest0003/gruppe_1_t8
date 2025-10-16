@@ -1,0 +1,22 @@
+/* body {
+  background-image: linear-gradient(to bottom, #f8f4f1, #e6d8c0);
+} */
+.quiz-question {
+  display: flex;
+}
+
+.quiz-question img {
+  place-self: stretch;
+}
+
+.quiz-question label {
+  place-self: start center;
+}
+
+.quiz-question div {
+  place-self: end center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
