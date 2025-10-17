@@ -55,9 +55,7 @@ submitButton.addEventListener("click", function (event) {
     <h2>Your Skin Type: ${resultType.toUpperCase()}</h2>
     <p>${message}</p>`;
   resultBox.style.background = "rgb(217, 235, 224, 0.8)";
-  resultBox.style.padding = "1.5rem";
   resultBox.style.borderRadius = "1rem";
-  resultBox.style.marginTop = "2rem";
 });
 
 // 💧 TEXTS FOR EACH RESULT TYPE
