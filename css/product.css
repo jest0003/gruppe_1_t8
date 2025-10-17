@@ -13,6 +13,7 @@
     background-color: #E4EBD4;
     border-radius: 30px;
     padding: 25px;
+    margin-left: 25px;
 }
 
 .product-box { display: grid;
@@ -31,7 +32,8 @@
 .small-img img {
     max-width: 140px;
     max-height: 140px;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 25px;
     border: solid 1px black;
 }
 
@@ -43,4 +45,79 @@
 }
 #right-side {
     margin-top: 20px;
+}
+
+#minus {
+    padding: 8px;
+    padding-left: 12px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    background-color: white;
+    font-family: mont-medium;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    border-width: 1px;
+}
+#plus {
+    padding: 8px;
+    padding-right: 12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    background-color: white;
+    font-family: mont-medium;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-right: 16px;
+}
+
+#amount {
+    background-color: white;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    font-family: mont-medium;
+    font-size: 26px;
+    border-width: 1px;
+}
+.add-to-bag {
+    background-color: #6D8273;
+     text-decoration: none;
+     color: white;
+    font-family: mont-medium;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.add-to-bag:hover {
+    background-color: #8A938E;
+}
+
+#pricetag {
+    margin-bottom: 20px;
+}
+.in-stock {
+    display: flex;
+    margin-top: 20px;
+}
+#green-red {
+    padding: 12px;
+    background-color: #87BA64;
+    border-style: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 8px;
 }
