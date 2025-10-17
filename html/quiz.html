@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/article.css" />
     <link rel="stylesheet" href="../css/quiz.css" />
     <script src="../js/header.js" defer></script>
+    <script src="../js/quiz.js" defer></script>
   </head>
   <body>
     <header>
@@ -54,51 +55,53 @@
             <span>1 - What is your skin type?</span>
           </label>
 
-          <input type="button" name="que1" value="DRY" class="button1" />
-          <input type="button" name="que1" value="OILY" class="button2" />
-          <input type="button" name="que1" value="COMBINATION" class="button3" />
-          <input type="button" name="que1" value="NORMAL" class="button4" />
+          <input type="button" name="que1" value="DRY" class="button1" data-type="dry" />
+          <input type="button" name="que1" value="OILY" class="button2" data-type="oily" />
+          <input type="button" name="que1" value="MATURE" class="button3" data-type="mature" />
+          <input type="button" name="que1" value="NORMAL" class="button4" data-type="normal" />
         </div>
 
         <div class="quiz-question">
           <img src="../images-milene/quizimg.webp" alt="quiz image" />
           <label for="que2" class="question"> <span>2- What is your top priority skin-wise? </span></label>
 
-          <input type="button" name="que2" value="HYDRATION" class="button1" />
-          <input type="button" name="que2" value="ANTI-ACNE" class="button2" />
-          <input type="button" name="que2" value="WRINKLES & FINE LINES" class="button3" />
-          <input type="button" name="que2" value="BALANCING" class="button4" />
+          <input type="button" name="que2" value="DRY" class="button1" data-type="dry" />
+          <input type="button" name="que2" value="ANTI-ACNE" class="button2" data-type="oily" />
+          <input type="button" name="que2" value="WRINKLES & FINE LINES" class="button3" data-type="mature" />
+          <input type="button" name="que2" value="BALANCING" class="button4" data-type="sensitive" />
         </div>
 
         <div class="quiz-question">
           <img src="../images-milene/quizimg.webp" alt="quiz image" />
           <label for="que2" class="question"> <span> 3- What are your main concerns around the eyes? </span></label>
 
-          <input type="button" name="que2" value="DARK CIRCLES" class="button1" />
-          <input type="button" name="que2" value="PUFFINESS" class="button2" />
-          <input type="button" name="que2" value="WRINKLES & FINE LINES" class="button3" />
-          <input type="button" name="que2" value="DRYNESS" class="button4" />
+          <input type="button" name="que3" value="DARK CIRCLES" class="button1" data-type="normal" />
+          <input type="button" name="que3" value="PUFFINESS" class="button2" data-type="sensitive" />
+          <input type="button" name="que3" value="WRINKLES & FINE LINES" class="button3" data-type="mature" />
+          <input type="button" name="que3" value="DRYNESS" class="button4" data-type="dry" />
         </div>
 
         <div class="quiz-question">
           <img src="../images-milene/quizimg.webp" alt="quiz image" />
           <label for="que2" class="question"> <span> 4- How does your skin usually feel after cleansing?</span></label>
 
-          <input type="button" name="que2" value="TIGHT & / OR DRY" class="button1" />
-          <input type="button" name="que2" value="OILY" class="button2" />
-          <input type="button" name="que2" value="BALANCED/COMFORTABLE" class="button3" />
-          <input type="button" name="que2" value="ITCHY / PRICKLY" class="button4" />
+          <input type="button" name="que4" value="TIGHT & / OR DRY" class="button1" data-type="dry" />
+          <input type="button" name="que4" value="OILY" class="button2" data-type="oily" />
+          <input type="button" name="que4" value="BALANCED/COMFORTABLE" class="button3" data-type="normal" />
+          <input type="button" name="que4" value="ITCHY / PRICKLY" class="button4" data-type="sensitive" />
         </div>
 
         <div class="quiz-question">
           <img src="../images-milene/quizimg.webp" alt="quiz image" />
           <label for="que2" class="question"><span> 5- Do you have sensitive skin?</span></label>
 
-          <input type="button" name="que2" value="YES" class="button1" />
-          <input type="button" name="que2" value="NO" class="button2" />
+          <input type="button" name="que5" value="YES" class="button1" />
+          <input type="button" name="que5" value="NO" class="button2" data-type="sensitive" />
         </div>
 
         <button type="submit" name="submit-quiz" value="submit-2" class="submit-btn">Get Results</button>
+
+        <div id="result-box"></div>
       </form>
     </main>
   </body>

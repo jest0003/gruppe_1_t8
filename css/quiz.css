@@ -185,12 +185,19 @@
   .quiz-question label span {
     padding: 0.5rem;
   }
-
-  .submit-btn {
-    display: block;
-    margin: 2rem auto; /* center it! */
-    width: 40%; /* slightly smaller on mobile */
-    height: 3rem;
-    font-size: 1rem;
+  #result-box {
+    margin-top: -8rem;
+  }
+  #result-box h2 {
+    padding-bottom: 1.2rem;
+  }
+}
+@media (min-width: 800px) {
+  #result-box {
+    padding: 10rem;
+    line-height: 2rem;
+  }
+  #result-box h2 {
+    padding-bottom: 2rem;
   }
 }
