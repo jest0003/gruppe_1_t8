@@ -47,6 +47,7 @@ a {
 .nav-menu.active {
   right: 0;
 }
+
 .nav-menu .nav-item:first-child {
   background-color: #6d8273;
   display: block;

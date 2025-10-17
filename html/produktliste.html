@@ -6,14 +6,41 @@
     <title>Blooming beauty</title>
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/produktliste.css">
+    <link rel="stylesheet" href="../css/header.css">
 <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
 <link rel="manifest" href="../favicon_io/site.webmanifest">
 <script src="../js/produktliste.js" defer></script>
+<script src="../js/header.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="nav-header">
+             <a href="index.html" class="nav-brand"><img src="../bblogo.webp" alt="Blooming beauty, and a flower in bloom in calming green colors"></a>
+             <div class="flex-r">
+                <a href="#" class="logon"><img src="../persona.webp" alt=""></a>
+                <a href="#" class="kurv"><img src="../kurv.webp" alt=""></a>
+<ul class="nav-menu">
+    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Makeup</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Skincare</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Fragrance</a>
+    </li>
+</ul>
+<div class="hamburger">
+    <div class="burger"><span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span></div>
+</div>
+</div>
+        </nav>
+    </header>
     <main>
 <h1>Products</h1>
 <ol class="breadcrumbs">
@@ -32,7 +59,7 @@
 </button>
     <button class="filterbtn">
         <img src="https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp" alt="Clickable Image">
-    <h3>BODY CAREE</h3>
+    <h3>BODY CARE</h3>
     </button>
 </section>
 
@@ -40,9 +67,10 @@
     <button data-direction="lowhigh" class="sortingbtn">Price: low to high</button>
     <button data-direction="highlow" class="sortingbtn">Price: high to low</button>
 </section>
-    <section class="category_list_container flex">
+    <section class="category_list_container">
         <div class="flex">
-            <div class="product_item">
+            
+            <!-- <div class="product_item">
                 <img src="https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp" alt="PUMA Backpack">
                 <h3>Attitude Super Leaves Hand Soap</h3>
                 <p class="category">A natural and nourishing hand soap enriched with the goodness of super leaves</p>
@@ -80,7 +108,7 @@
                     <a href="produkt.html">ADD TO BAG</a>
                 </div>
                 
-            </div>
+            </div> -->
         </div>
 
     </section>
