@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `}
 
           <div class="produktbtn flex">
-            <a href="produkt.html?id=${element.id}">READ MORE</a>
+            <a href="product.html?id=${element.id}&category=${subcat}">READ MORE</a>
             <a href="#">ADD TO BAG</a>
           </div>
         </div>
