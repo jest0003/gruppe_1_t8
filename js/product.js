@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const productBox = document.querySelector(".product-box");
         const description = document.querySelector(".desription_card");
-        const review = document.querySelector(".review_card");
+        const review = document.querySelector(".review");
 
       // Beregn nedsat pris hvis der er en discountPercentage
       const discountedPrice = product.discountPercentage
@@ -37,9 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div id="right-side">
           <h1>${product.title}</h1>
-          <p id="pricetag">${discountedPrice} €</p>
+          <p id="pricetag">
+  ${product.discountPercentage ? 
+    `<span class="old-price">${product.price} €</span>
+    <span class="discounted-price">NOW ${discountedPrice} €</span>` 
+    : 
+    `${product.price} €`
+  }
+</p>
           <div><a href="#" id="minus">-</a><a id="amount">1</a><a href="#" id="plus">+</a> <a class="add-to-bag" href="#">Add to bag</a></div>
-          <div class="in-stock"><button id="green-red" style="background-color:${product.stock > 0 ? 'green' : 'red'}"></button><p>in stock... or not</p></div>
+          <div class="in-stock"><button id="green-red" style="background-color:${product.stock > 0 ? 'green' : 'red'}"></button><p>${product.stock > 0 ? 'In stock' : 'Out of stock'}</p></div>
         </div>`;
         description.innerHTML =
         `<div>
@@ -58,6 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Reason three</li>
           </ul>
         </div>`
+
+        product.reviews.forEach((reviewItem) => {
+  review.innerHTML += 
+  `<section class="review_card">
+  <article class="flex-r">
+  <div class="logon">
+      <img src="../persona.webp" alt="" />
+    </div>
+    <div>
+      <p>Rating: ${reviewItem.rating}</p>
+      <p>${reviewItem.reviewerName}</p>
+    </div>
+  </article>
+  <p class="gap">${reviewItem.comment}</p>
+  </article></section>`;
+});
+
  ///---gallery
     
     const thumbnails = document.querySelectorAll(".thumb");

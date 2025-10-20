@@ -1,8 +1,21 @@
+main {
+margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .desription_card {display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: #faf5f2;
     margin: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 30px;
     border-radius: 30px;
     gap: 30px;
@@ -13,6 +26,10 @@
     background-color: #E4EBD4;
     border-radius: 30px;
     padding: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.margin_left {
     margin-left: 25px;
 }
 
@@ -105,7 +122,8 @@
     background-color: #8A938E;
 }
 
-#pricetag {
+#pricetag {display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 .in-stock {
@@ -119,4 +137,10 @@
     border-radius: 50px;
     margin-right: 10px;
     margin-left: 8px;
+}
+.gap {
+    margin-top: 20px;
+}
+.discounted-price {
+    color: red;
 }
