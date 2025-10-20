@@ -37,7 +37,6 @@
 /* Hero image styling */
 .hero-image {
   flex: 1;
-  max-width: 600px;
   border-radius: 15px;
   box-shadow: 0 4px 12px #6d8273c4;
 }
