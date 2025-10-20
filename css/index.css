@@ -131,8 +131,6 @@
   object-fit: contain;
   margin: 0 auto 15px;
   display: block;
-  background-color: white;
-  border: solid 1px black;
 }
 
 /* Styling for kategorinavnet */
@@ -161,6 +159,7 @@
   transition: background-color 0.3s;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .category-card a:hover {
