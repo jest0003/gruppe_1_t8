@@ -21,6 +21,14 @@ margin: 0 auto;
     gap: 30px;
 }
 
+li {
+    font-family: mont-reg;
+  font-size: 20px;
+}
+h2 {
+    margin-bottom: 14px;
+}
+
 .review_card {
     display: inline-block;
     background-color: #E4EBD4;
@@ -46,18 +54,19 @@ margin: 0 auto;
     flex-direction: column;
 }
 .small-img img {
-    max-width: 140px;
-    max-height: 140px;
+    max-width: 100px;
+    max-height: 100px;
     margin: 10px;
     margin-left: 25px;
     border: solid 1px black;
 }
 
 #big-img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 375px;
+    max-height: 375px;
     border: solid 1px black;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 #right-side {
     margin-top: 20px;
@@ -143,4 +152,7 @@ margin: 0 auto;
 }
 .discounted-price {
     color: red;
+}
+footer {
+    margin-top: 60px;
 }

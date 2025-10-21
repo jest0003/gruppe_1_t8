@@ -19,7 +19,7 @@ a {
   align-items: center;
   padding: 0 24px;
 }
-.nav-menu {
+.navmenu {
   position: fixed;
   right: -100%;
   top: 128px;
@@ -34,38 +34,41 @@ a {
   margin-right: 20px;
 }
 
-.nav-item {
+.nav-item, .nav-items {
   margin: 16px 0;
   padding-right: 20px;
   padding-left: 20px;
+}
+.nav-items {
+  margin-bottom: 25px;
 }
 .nav-link {
   color: black;
   font-family: mont-medium;
   font-size: 20px;
 }
-.nav-menu.active {
+.navmenu.active {
   right: 0;
 }
 
-.nav-menu .nav-item:first-child {
+.navmenu .nav-item:first-child {
   background-color: #6d8273;
   display: block;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   margin-top: 0;
 }
-.nav-menu .nav-item:first-child .nav-link {
+.navmenu .nav-item:first-child .nav-link {
   color: white;
   display: block;
   padding-top: 20px;
   padding-bottom: 16px;
   border: #6d8273;
 }
-.nav-menu .nav-item:nth-child(2) {
+.navmenu .nav-items:nth-child(1) {
   margin-top: 0px;
 }
-.nav-menu .nav-item:nth-child(4) {
+.navmenu .nav-items:nth-child(3) {
   margin-bottom: 20px;
 }
 .logon {
