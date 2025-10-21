@@ -37,7 +37,6 @@
 /* Hero image styling */
 .hero-image {
   flex: 1;
-  max-width: 600px;
   border-radius: 15px;
   box-shadow: 0 4px 12px #6d8273c4;
 }
@@ -131,8 +130,6 @@
   object-fit: contain;
   margin: 0 auto 15px;
   display: block;
-  background-color: white;
-  border: solid 1px black;
 }
 
 /* Styling for kategorinavnet */
@@ -161,6 +158,7 @@
   transition: background-color 0.3s;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .category-card a:hover {
