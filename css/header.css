@@ -21,11 +21,12 @@ a {
 }
 .navmenu {
   position: fixed;
+  list-style-type: circle;
   right: -100%;
   top: 128px;
   background-color: white;
   text-align: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   border: #6d8273;
@@ -34,7 +35,16 @@ a {
   margin-right: 20px;
 }
 
-.nav-item, .nav-items {
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.nav-item,
+.nav-items {
   margin: 16px 0;
   padding-right: 20px;
   padding-left: 20px;

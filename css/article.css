@@ -4,20 +4,37 @@
 body {
   background-image: linear-gradient(to bottom, #f8f4f1, #e6d8c0);
 }
+main {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 h1 {
-  margin: 5rem;
-
   margin-bottom: 1rem;
 }
 .title-part2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
 }
+.img-castor-1 {
+  object-fit: cover;
+  max-width: 45rem;
+  max-height: 33rem;
+}
+
 .article-title {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  margin-right: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.title {
+  margin-right: 2.5rem;
 }
 .intro-castor {
   background-color: rgb(217, 235, 224, 0.7);
@@ -27,12 +44,12 @@ h1 {
   border-radius: 0.8rem;
   max-width: 110ch;
   padding-top: 3.6rem;
-  padding-left: 4.2rem;
+  padding-left: 3.2rem;
   padding-right: 5.5rem;
   padding-bottom: 3.3rem;
   margin-top: 4.3rem;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 4.5rem;
   margin-right: 10rem;
   line-height: 2.7rem;
 }
@@ -46,7 +63,7 @@ ul {
   margin-right: 10rem;
 }
 li {
-  list-style-type: circle;
+  /* list-style-type: circle; */
   font-family: mont-reg;
   font-size: 20px;
   line-height: 2.4rem;
@@ -55,22 +72,48 @@ li {
 .castor-2 {
   background-color: rgb(250, 245, 242, 0.7);
   border-radius: 2rem;
-  margin-right: 9.5rem;
+  margin-right: 6.9rem;
   margin-left: 2.6rem;
   margin-top: 3.5rem;
-  margin-bottom: 15rem;
+
   padding-top: 3.5rem;
-  padding-right: 0.5rem;
+  padding-right: 5.5rem;
   padding-bottom: 3.5rem;
   padding-left: 5rem;
   line-height: 1.6rem;
-  max-width: 84rem;
-  margin-bottom: 4rem;
+  max-width: 90rem;
   line-height: 2.4rem;
 }
 .castor-image {
-  margin-left: 8rem;
+  margin-top: 3rem;
+  object-fit: cover;
+  max-width: 50rem;
+  margin-top: 3rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
+.castor-button {
+  max-width: 10rem;
+  height: 2.5rem;
+  background-color: #6d8273;
+  color: #f8f4f1;
+  border-radius: 0.8rem;
+  font-family: mont-reg;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 4.5rem;
+  box-shadow: none;
+  font-size: 1rem;
+  height: auto;
+  padding: 0.6rem 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   * {
     margin: 0;
@@ -150,5 +193,8 @@ li {
   .castor-2 {
     font-size: 0.6rem;
     line-height: 2rem;
+  }
+  .castor-button {
+    margin-left: 0.4rem;
   }
 }
