@@ -14,16 +14,16 @@ document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click",
 
 const catlinks = document.querySelector("#catlinks");
 
-const desiredCategories = [
+const desiredCategoriesx = [
   { name: "Makeup", category: "beauty", productId: 3 },
   { name: "Skin Care", category: "skin-care", productId: 118 },
   { name: "Fragrances", category: "fragrances", productId: 10 },
 ];
 
-function showCategories(categories) {
-  categories.forEach((category) => {
+function showCategories(categoriesx) {
+  categoriesx.forEach((categoryx) => {
     fetch(
-      `https://dummyjson.com/products/category/${category.category}?limit=1`
+      `https://dummyjson.com/products/category/${categoryx.category}?limit=1`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -31,7 +31,7 @@ function showCategories(categories) {
 
           catlinks.innerHTML += `
           <li class="nav-items">
-        <a href="produktliste.html?category=${category.category}" class="nav-link">${category.name}</a>
+        <a href="produktliste.html?category=${categoryx.category}" class="nav-link">${categoryx.name}</a>
     </li>
           `;
         }
@@ -39,4 +39,4 @@ function showCategories(categories) {
   });
 }
 
-showCategories(desiredCategories);
+showCategories(desiredCategoriesx);
