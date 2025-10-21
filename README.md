@@ -1,78 +1,75 @@
 # Teknisk dokumentation for Tema 8 gruppeprojekt
 
-Når man er flere der bidrager til en kodebase, lærer man hurtigt, at ens sædvanlige måder at gøre tingene på ikke nødvendigvis er logisk for alle.
-
-Skriv derfor jeres fælles retningslinjer for punkterne herunder(tilføj gerne flere selv), sådan som det giver bedst mening for jer som gruppe. Dokumentationen sikre, at jeres fælles kodebase forbliver overskuelig, er let at arbejde med og til at forstå for alle, og at I undgå konflikter, og har nemmere ved at hjælpe hinanden undervejs.
-
-## Rapport:
-
-(indsæt link)
-
 ## Projektstruktur:
+Gruppen har valgt at organisere vores projekt på den måde, at vi har mapper som f.eks. hedder “css”, “js” og “img”, så hvis vi har filer som tilhører den kategori, så bliver de placeret i den kategori.
 
-Beslut, hvordan I vil organisere jeres projekt – struktur for mapper og filer.
-
-- Hvordan organiserer I billeder, fonte og andre ressourcer?
-- Hvor placerer I boilerplate?(fx CSS- og JavaScript-filer, der bruges på tværs af projektet)
-- Hvor placerer I HTML, CSS- og JavaScript-filer til fx detaljevisning og listevisning?
+Boilerplates er oprindeligt blevet oprettet som separate dokumenter på deres egne branches for at undgå konflikter og sikre, at vi ikke roder i hinandens kode. De elementer, der gav mening at samle, er senere blevet slået sammen til ét fælles dokument. Dokumenter, der ikke er blevet integreret, skal naturligvis stadig linkes eller importeres via scripts på hver enkelt side, hvor de anvendes.
 
 ## Navngivning:
+Gruppen besluttede at navngive filer og mapper med små bogstaver. De blev navngivet efter hvad de indeholdt, så f.eks billeder fik navnet “img”, eller produktlisten, blev kaldt “produktliste.html”. 
 
-Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
-
-- Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller \_)
-- Hvordan sikre I at det er til at forstå hvilke HTML-, CSS- og JavaScript-filer der høre sammen?
+Måden vi sikrede os at der ikke blev nogen forvirring mellem HTML-, CSS- og JavaScript-filer, har vi f.eks. typisk navngivet alle “produktliste”/html/css/js - så vidste vi at de tilhører hinanden. 
 
 ## Link til scripts:
-
-- Hvor placerer I script referencer i HTML'en? (fx i <head> med defer attribute, eller sidst i <body>)
+Gruppen valgte at linke til vores JS scripts i <head> med defer.
 
 ## Git branches:
+Måden vi navngiver vores branches har været lidt forskelligt, men vi blev enige om hvilken side vi tog enkeltvis og på den måde viste vi hvem der arbejdede på hvilken branch. Nogle har også valgt at tilføje deres navn, og også hvilken version vi var nået til. 
 
-- Hvordan navngiver I branches, så alle kan forstår hvem der arbejder i branchen og på hvad?(fx feature-lotte-formular)
 
 ## Arbejdsflow:
 
-- Hvordan fordeler I arbejdet, så I undgår at flere arbejder i de samme filer samtidigt?
-- Hvordan sikrer I, at commit-beskeder er beskrivende?
-- Hvordan kommunikerer i om ændringer i main branchen når feature merges?
+Fordeling af arbejde:
+Vi har en fælles aftale om, hvem der arbejder på hvilken side og laver hver branches til de respektive sider, vi arbejder på. På denne måde har vi hver vores egen branch og arbejder derfor ikke oveni hinandens kode, samt undgår at overskrive koderne i merge, fordi vi arbejder på hver vores side.
+
+Vi forklarer hvad der er ændret i vores kode i hver commit beskrivelse, for at få et overblik over de nye opdateringer og/eller tilføjelser.
+
+Når vi arbejder sammen fysisk, fortæller vi, når vi merger vores branch med main. Når vi ikke er fysisk til stede, er vi enten på et teams møde eller vores fælles gruppe chat og informerer, når der er blevet merget med main, så der er kode der kan hentes/pulles.
 
 ## Kode:
-
-- Hvordan skriver i funktioner i JavaScript?(fx med function keyword eller som arrow functions)
-- Beslut hvilken CSS selector i benyttes til referener i henholdsvis CSS og JavaScript(fx. id'er til JavaScript og Classes til CSS)
-- Skal filer have korte forklaringer som kommentarer?
+Funktioner i JavaScript:
+Vi har både brugt function keywords og arrow functions, alt efter hvad der gav mening for den enkelte. Siden JavaScript er nyt for os alle, har vi brugt hvad der har fungeret for os.
 
 # Funktionalitet
+Dette afsnit skal forklare, hvad I konkret har arbejdet med, for at udvikle websitet. Tænk over hvilke interaktioner brugeren kan foretage på sitet? Eller hvordan websitet håndterer og præsenterer data? Eksempler på funktionalitet, der kan beskrives:
 
-Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websitet. Tænk over hvilke interaktioner brugeren kan foretage på sitet? Eller hvordan websitet håndterer og præsenterer data? Eksempler på funktionalitet, der kan beskrives:
+Brugeren har adgang til en indkøbskurv for at kunne se de valgte produkter.
 
-- Hentning af produkter fra API.
-- Filtrering af produkter baseret på brugerens valg.
-- Dynamisk visning af produkter i HTML.
+
+Filtrering af produkter:
+Vi har lavet filtrering i produktliste cards, så brugeren ud fra deres eget valg, fx “mascara” card, kan tilgå den valgte kategori fra Beauty API’en.
+
+
+Dynamisk visning i HTML:
+
+Gennem cards, kan brugerne sortere produkter i fragrance, make-up og skincare. Der er pris-sortering (lav til høj) til at gøre det lettere at shoppe på budget.  
+På produktkort kan man se prisen på et enkelt produkt, om de er disponible eller solgt-ud og om der er tilbud. Tilbud farvene er røde for at gøre dem mere synlige. 
 
 Brug korte beskrivelser, som i eksemplerne herover
 
 # API endpoints
-
 Dette afsnit skal liste de endpoints fra API'et i har benyttet:
+- https://dummyjson.com/products/category/beauty
+- https://dummyjson.com/products/category/skin-care 
+- https://dummyjson.com/products/category/fragrances 
 
-- (fx. https://dummyjson.com/products)
+# Dokumentation af Funktion 
+Vi vælger en del af vores burgermenu som eksempel på funktion i vores JS kode. Denne kode går igen på alle sider og er essentiel for hjemmesiden. 
 
-# Dokumentation af Funktion
+Det som funktionen gør, er at når man klikker på ikonet med de tre streger, aktiverer det klassen, hamburger, som får burgermenuen til at vise sig. 
 
-Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelvis være en funktion der generere en listen over fx. produkter:
+Det input som forventes er at den aktivere “active” klassen, når den klasse kommer på, ændres udseendet og en animation spilles i CSS koden. Funktionen manipulere DOM’en.
 
-- Beskrivelse: Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
-- Parametre: Hvilke input forventes (fx en værdi fra en dropdown eller URL'en)?
-- Returnerer: Beskriv, om funktionen returnerer en værdi eller blot manipulerer DOM’en.
-- Eksempel på brug: Indsæt funktions-koden herunder(der hvor koden er i eksemplet) og vis, hvordan funktionen kaldes:
-
-```javascript
+- Eksempel på brug: 
 //funktionens kode:
-function voresFunktion(sprog) {
-  console.log(`${sprog} syntax highlighting`);
-}
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+
 //hvordan funktionen kaldes:
-voresFunktion("JavaScript");
-```
+Den bliver kaldt når man klikker på classen .hamburger
