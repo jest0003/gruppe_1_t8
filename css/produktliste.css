@@ -10,7 +10,7 @@ main{
 margin: 0 auto;
   padding: 0;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -82,8 +82,8 @@ color: black;
   background-color: #F4FFEC;
   border: 2px solid #B3CAA3;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px ;
+  height: 150px ;
   padding: 15px;
   cursor: pointer;
   filter: drop-shadow(0 0 0.25rem #B3CAA3);
@@ -95,8 +95,8 @@ color: black;
 
 .filterbtn img {
   width: 170px;
-  height: 170px;
-  margin-top: 30px;
+  height: 120px;
+  margin-top: 66px;
   object-fit: contain;
 }
 
