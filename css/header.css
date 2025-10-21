@@ -39,6 +39,9 @@ a {
   padding-right: 20px;
   padding-left: 20px;
 }
+.nav-items {
+  margin-bottom: 25px;
+}
 .nav-link {
   color: black;
   font-family: mont-medium;

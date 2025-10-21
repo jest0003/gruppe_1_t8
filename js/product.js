@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `<section class="review_card">
   <article class="flex-r">
   <div class="logon">
-      <img src="../persona.webp" alt="" />
+      <img src="img/persona.webp" alt="" />
     </div>
     <div>
       <p>Rating: ${reviewItem.rating}</p>
