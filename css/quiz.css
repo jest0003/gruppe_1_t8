@@ -32,10 +32,6 @@
   display: inline-block;
   background: rgb(217, 235, 224, 0.8); /* optional contrast */
   border-radius: 1rem;
-
-  padding: 0.6rem 0.8rem;
-  margin-top: -3rem;
-  margin-left: -3rem;
 }
 .quiz-question {
   display: grid;
@@ -194,7 +190,8 @@
 }
 @media (min-width: 800px) {
   #result-box {
-    padding: 10rem;
+    margin-bottom: 2rem;
+    padding: 6rem;
     line-height: 2rem;
   }
   #result-box h2 {

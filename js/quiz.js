@@ -27,6 +27,7 @@ const resultBox = document.getElementById("result-box");
 
 // 📦 When user clicks "Submit"
 submitButton.addEventListener("click", function (event) {
+  resultBox.scrollIntoView();
   event.preventDefault(); // stop page reload
 
   const values = Object.values(answers);

@@ -21,6 +21,7 @@ a {
 }
 .nav-menu {
   position: fixed;
+  list-style-type: circle;
   right: -100%;
   top: 128px;
   background-color: white;
