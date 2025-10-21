@@ -29,7 +29,7 @@ const catlinks = document.querySelector("#catlinks");
         if (data.products && data.products.length > 0) {
           catlinks.innerHTML += `
           <li class="nav-items">
-        <a href="produktliste.html?category=${category.category}" class="nav-link">${category.name}</a>
+        <a href="produktliste.html?category=${categoryx.category}" class="nav-link">${categoryx.name}</a>
     </li>
           `;
         }
