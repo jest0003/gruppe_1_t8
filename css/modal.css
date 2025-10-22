@@ -1,61 +1,81 @@
+/* 🌿 Overall modal overlay */
 .modal {
   display: none;
   position: fixed;
   z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(87, 112, 97 0.7);
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  background-color: rgba(146, 143, 137, 0.5); /* semi-transparent green overlay */
+  backdrop-filter: blur(4px); /* 🌫️ adds blur effect */
   justify-content: center;
   align-items: center;
 }
 
+/* 🌸 Popup box */
 .modal-content {
-  background-color: #ffffff;
-  padding: 3rem;
+  position: relative;
+  background-color: #fbfaf9;
   border-radius: 1.4rem;
-  width: 80%;
-  height: 59%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: #e5ffed;
-  animation: fadeIn 0.5sec ease;
+  padding: 2rem;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease;
+}
+.small-text {
+  font-size: 0.9rem;
+}
+.small {
+  font-size: 0.69rem;
+  margin: 0.8rem;
+}
+/* 🧁 Inside layout (image + text side by side) */
+.modal-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-/* 🧁 Smooth fade-in animation */
-/* @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-} */
+.modal-img {
+  width: 50%;
+  border-radius: 1rem; /* now this works */
+  object-fit: cover;
+}
 
+/* 📄 Text section */
+.modal-text {
+  width: 50%;
+  text-align: center;
+}
+
+/* ❌ Close button */
 .close-btn {
   position: absolute;
-  z-index: 10;
+  top: 0.8rem;
   right: 1rem;
-  top: 1rem;
-  font-size: 10rem;
+  font-size: 2rem;
   color: #666;
   cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 20;
 }
+
 .close-btn:hover {
   color: #000;
 }
 
-/* 🪴 Input + button styling */
+/* 🌼 Form styling */
 .modal-content input[type="email"] {
   padding: 0.8rem;
   margin-top: 1rem;
-  width: 80%;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
 
-.modal-content button {
+.modal-content button[type="submit"] {
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
   background-color: #6d8273;
@@ -65,6 +85,32 @@
   cursor: pointer;
 }
 
-.modal-content button:hover {
-  background-color: #567061;
+.modal-content button[type="submit"]:hover {
+  background-color: #64796d;
+}
+
+/* 💫 Smooth animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📱 Mobile responsive */
+@media (max-width: 600px) {
+  .modal-flex {
+    flex-direction: column;
+  }
+  .modal-img {
+    width: 80%;
+  }
+  .modal-text {
+    width: 100%;
+    text-align: center;
+  }
 }
