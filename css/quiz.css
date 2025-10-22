@@ -32,6 +32,9 @@
   display: inline-block;
   background: rgb(217, 235, 224, 0.8); /* optional contrast */
   border-radius: 1rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
 }
 .quiz-question {
   display: grid;
@@ -43,8 +46,7 @@
   font-family: mont-reg;
   font-size: 1.4rem;
   font-weight: bold;
-
-  margin-left: 2rem;
+  margin: auto;
   margin-bottom: 2.5rem;
   overflow: hidden;
 }
