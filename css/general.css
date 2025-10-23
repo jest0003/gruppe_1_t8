@@ -14,14 +14,17 @@
 h1 {
   font-family: prata;
   font-size: 48px;
+  color: #272924;
 }
 h2 {
   font-family: mont-reg;
   font-size: 32px;
+  color: #272924;
 }
 p {
   font-family: mont-reg;
   font-size: 20px;
+  color: #272924;
 }
 
 a {
