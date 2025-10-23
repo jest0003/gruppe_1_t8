@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${product.description}</p>
         </div>
         <div>
-          <h2>Ingridienser</h2>
-          <p>liste af ingridienser og andet godt lol. <br>Der er desværre ingen at hente fra json listen</p>
+          <h2>Ingredienser</h2>
+          <p>liste af ingredienser og andet godt lol. <br>Der er desværre ingen at hente fra json listen</p>
         </div>
         <div>
           <h2>Why you'll love it</h2>
